@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Contact | Tyman Auerbach Attorneys at Law">
+  <section class="content-section">
+    <div class="section-inner-narrow">
+      <h1 class="section-title">Contact Us</h1>
+      <p class="lead-text" style="margin-bottom: 2rem;">
+        We'll build out the contact page with a form and your contact information next. For now, you know how to reach us.
+      </p>
+      <a href="/" class="btn btn-primary">Back to Home</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .lead-text {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--charcoal);
+  }
+
+  .btn {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    padding: 1rem 2.2rem;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    display: inline-block;
+  }
+
+  .btn-primary {
+    background: var(--red);
+    color: var(--warm-white);
+    box-shadow: 4px 4px 0 var(--warm-black);
+    font-weight: 600;
+  }
+
+  .btn-primary:hover {
+    background: var(--deep-red);
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 var(--warm-black);
+  }
+</style>

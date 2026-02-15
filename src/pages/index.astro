@@ -1,0 +1,639 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1>
+          Something
+          <span class="accent">Brought You Here.</span>
+        </h1>
+        <p class="hero-tagline">
+          Usually it's a problem. Tell us what it is. We'll let you know if we can help—and if we can, we'll handle it.
+        </p>
+        <div class="cta-group">
+          <a href="/contact" class="btn btn-primary">Tell Us What's Going On</a>
+          <a href="/services" class="btn btn-secondary">How We Work</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="card-kicker">Credibility</div>
+        <h2>Trusted Locally.<br>Built for Pressure.</h2>
+        
+        <div class="card-stat">
+          <div class="stat-number">5.0</div>
+          <div class="stat-label">Top-rated for Austin business law on Yelp & Google</div>
+        </div>
+
+        <div class="card-stat">
+          <div class="stat-number">#1</div>
+          <div class="stat-label">Highest ranking for business litigation in Austin</div>
+        </div>
+
+        <div class="card-detail">
+          We're Austin-based. We earn referrals. We handle serious matters without drama.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Do Section -->
+  <section class="content-section what-we-do">
+    <div class="section-inner">
+      <h2 class="section-title">What We Handle</h2>
+      
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-number">01</div>
+          <h3>Business Disputes</h3>
+          <p>Contract fights. Partnership blowups. Customer or vendor conflicts. If it's threatening your business, we figure out the fastest path to resolution—whether that's litigation, arbitration, negotiation, or something else entirely.</p>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">02</div>
+          <h3>Getting Screwed Over</h3>
+          <p>Someone injured you and now they're playing games with compensation. Or an insurance company is lowballing you. We handle these cases through referrals and for people we know—because we're good at it and because it matters.</p>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">03</div>
+          <h3>Contracts That Work</h3>
+          <p>Most contract problems start with bad paperwork. We draft, review, and fix agreements so they actually do what you need them to do—and so you're covered when things go sideways later.</p>
+        </div>
+      </div>
+
+      <p class="section-note">
+        If your situation doesn't fit neatly into one of these boxes, tell us anyway. We handle a lot of things that don't fit categories.
+      </p>
+    </div>
+  </section>
+
+  <!-- How We Work Section -->
+  <section class="content-section how-we-work">
+    <div class="section-inner">
+      <div class="split-content">
+        <div class="content-left">
+          <h2 class="section-title">How We Work</h2>
+          <p class="lead-text">We don't have a process. We have principles.</p>
+        </div>
+        
+        <div class="content-right">
+          <div class="principle-item">
+            <h4>We tell you what we see</h4>
+            <p>If your case has problems, we'll tell you up front. If the other side has leverage, we'll explain it. We're not here to sell you on your chances—we're here to give you the information you need to make decisions.</p>
+          </div>
+
+          <div class="principle-item">
+            <h4>We figure it out</h4>
+            <p>Most of our clients come to us with messy situations that don't fit a template. Good. We'd rather solve the actual problem than follow a playbook that doesn't work.</p>
+          </div>
+
+          <div class="principle-item">
+            <h4>We're in it with you</h4>
+            <p>When clients talk about working with us, they usually mention two things: we don't waste their time, and we don't waste their money. That's not a marketing line—that's just how we operate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Are Section -->
+  <section class="content-section who-we-are">
+    <div class="section-inner">
+      <h2 class="section-title">Who We Are</h2>
+      
+      <div class="bio-grid">
+        <div class="bio-card">
+          <h3>Daniel Tyman</h3>
+          <p class="bio-role">Strategy & Legal Theory</p>
+          <p>Background in business law and teaching. Tends to explain complex legal strategies in 20-minute monologues that somehow make sense. Clients usually leave those conversations feeling like they understand what's happening—which is the point.</p>
+          <a href="/about" class="bio-link">More about Daniel →</a>
+        </div>
+
+        <div class="bio-card">
+          <h3>Benjamin Auerbach</h3>
+          <p class="bio-role">Negotiation & Client Relations</p>
+          <p>World-class negotiator. The one who generally tends to clients and gets things done. Abrasive New York Jew (his words). Clients appreciate that he doesn't sugarcoat anything and that he actually returns their calls.</p>
+          <a href="/about" class="bio-link">More about Benjamin →</a>
+        </div>
+      </div>
+
+      <p class="section-note">
+        We're both amiable, real people. We just also happen to be good at this.
+      </p>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="content-section final-cta">
+    <div class="section-inner-narrow">
+      <h2 class="section-title">Tell Us What's Going On</h2>
+      <p class="lead-text">
+        If you've got a problem we can help with, we'll let you know. If we can't help, we'll tell you that too.
+      </p>
+      <a href="/contact" class="btn btn-primary btn-large">Get In Touch</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--warm-white) 0%, var(--cream) 50%, #EBE4D1 100%);
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 50%;
+    height: 140%;
+    background: linear-gradient(165deg, transparent 0%, rgba(211, 47, 47, 0.08) 40%, rgba(211, 47, 47, 0.15) 60%, transparent 100%);
+    transform: rotate(-12deg);
+    pointer-events: none;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><filter id="noise"><feTurbulence baseFrequency="0.9" numOctaves="3"/></filter><rect width="100" height="100" filter="url(%23noise)" opacity="0.05"/></svg>');
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4.5rem;
+    line-height: 0.95;
+    color: var(--warm-black);
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    animation: slideInLeft 0.8s ease-out;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .hero-content h1 .accent {
+    color: var(--red);
+    display: block;
+    font-size: 5.5rem;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+  }
+
+  .hero-tagline {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--charcoal);
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    max-width: 600px;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .cta-group {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+  }
+
+  .btn {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    padding: 1rem 2.2rem;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: var(--red);
+    color: var(--warm-white);
+    box-shadow: 4px 4px 0 var(--warm-black);
+    font-weight: 600;
+  }
+
+  .btn-primary:hover {
+    background: var(--deep-red);
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 var(--warm-black);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--warm-black);
+    border: 2px solid var(--warm-black);
+    font-weight: 600;
+  }
+
+  .btn-secondary:hover {
+    background: var(--warm-black);
+    color: var(--cream);
+  }
+
+  .btn-large {
+    padding: 1.2rem 3rem;
+    font-size: 1.4rem;
+  }
+
+  /* Hero Card */
+  .hero-card {
+    background: var(--warm-white);
+    border: 3px solid var(--warm-black);
+    padding: 2.5rem;
+    position: relative;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.15);
+    animation: slideInRight 0.8s ease-out 0.3s both;
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .hero-card::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: 8px;
+    bottom: 8px;
+    border: 3px solid var(--red);
+    pointer-events: none;
+  }
+
+  .card-kicker {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    color: var(--red);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .hero-card h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    color: var(--warm-black);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .card-stat {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--cream);
+  }
+
+  .card-stat:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .stat-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: var(--red);
+    font-weight: 700;
+  }
+
+  .stat-label {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.1rem;
+    color: var(--charcoal);
+    line-height: 1.3;
+    flex: 1;
+  }
+
+  .card-detail {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--cream);
+    font-size: 0.95rem;
+    color: var(--charcoal);
+    line-height: 1.6;
+  }
+
+  /* Problem Grid */
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .problem-card {
+    background: var(--warm-white);
+    border: 3px solid var(--warm-black);
+    padding: 2rem;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .problem-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.2);
+  }
+
+  .problem-card::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: 6px;
+    bottom: 6px;
+    border: 3px solid var(--red);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+
+  .problem-card:hover::before {
+    opacity: 1;
+  }
+
+  .problem-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    color: rgba(211, 47, 47, 0.15);
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .problem-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: var(--warm-black);
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+  }
+
+  .problem-card p {
+    color: var(--charcoal);
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+
+  /* Split Content */
+  .split-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .lead-text {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: var(--charcoal);
+    margin-top: 1.5rem;
+  }
+
+  .principle-item {
+    margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    border-left: 4px solid var(--red);
+  }
+
+  .principle-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .principle-item h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--warm-black);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.5px;
+  }
+
+  .principle-item p {
+    color: var(--charcoal);
+    line-height: 1.7;
+    font-size: 1.05rem;
+  }
+
+  /* Bio Grid */
+  .bio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .bio-card {
+    background: var(--cream);
+    border: 3px solid var(--warm-black);
+    padding: 2.5rem;
+    position: relative;
+  }
+
+  .bio-card::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 60px;
+    height: 60px;
+    background: var(--red);
+    z-index: -1;
+  }
+
+  .bio-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+    color: var(--warm-black);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .bio-role {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    color: var(--red);
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  .bio-card p {
+    color: var(--charcoal);
+    line-height: 1.7;
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .bio-link {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    color: var(--red);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+  }
+
+  .bio-link:hover {
+    color: var(--deep-red);
+    text-decoration: underline;
+  }
+
+  /* Final CTA */
+  .final-cta {
+    background: linear-gradient(135deg, var(--warm-black) 0%, var(--charcoal) 100%);
+    color: var(--cream);
+  }
+
+  .final-cta .section-title {
+    color: var(--cream);
+  }
+
+  .final-cta .section-title::after {
+    background: var(--red);
+  }
+
+  .final-cta .lead-text {
+    color: var(--cream);
+    margin-bottom: 2.5rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+    }
+
+    .hero-content h1 .accent {
+      font-size: 4.5rem;
+    }
+
+    .problem-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .split-content {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .bio-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.8rem;
+    }
+
+    .hero-content h1 .accent {
+      font-size: 3.5rem;
+    }
+
+    .hero-tagline {
+      font-size: 1.25rem;
+    }
+
+    .cta-group {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .hero-card {
+      padding: 2rem;
+    }
+
+    .stat-number {
+      font-size: 2.8rem;
+    }
+
+    .problem-card h3 {
+      font-size: 1.5rem;
+    }
+
+    .bio-card h3 {
+      font-size: 1.8rem;
+    }
+
+    .lead-text {
+      font-size: 1.4rem;
+    }
+  }
+</style>

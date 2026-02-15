@@ -1,0 +1,125 @@
+/* Global Styles - Tyman Auerbach Law */
+
+:root {
+  --red: #D32F2F;
+  --deep-red: #B71C1C;
+  --warm-black: #1A1412;
+  --charcoal: #2C2624;
+  --cream: #F5F1E8;
+  --warm-white: #FDFBF7;
+  --leather: #8B6F47;
+  --muted-red: #C97D7D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background: var(--cream);
+  color: var(--warm-black);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Paper texture background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.02) 2px, rgba(0,0,0,.02) 4px),
+    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,.02) 2px, rgba(0,0,0,.02) 4px);
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.site-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Content Sections */
+.content-section {
+  padding: 5rem 2rem;
+  position: relative;
+}
+
+.content-section:nth-child(even) {
+  background: var(--warm-white);
+}
+
+.content-section:nth-child(odd) {
+  background: var(--cream);
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-inner-narrow {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  color: var(--warm-black);
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  background: var(--red);
+}
+
+.section-note {
+  color: var(--charcoal);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-style: italic;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(0,0,0,0.1);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .content-section {
+    padding: 3rem 1.5rem;
+  }
+}
